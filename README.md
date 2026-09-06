@@ -22,6 +22,8 @@ Custom Computer Controller that uses a custom PCB to control the media functions
 ### Circuit Design
 ![Circuit Schematic](./hardware/design/PCB%20Design.png)
 ### 3D PCB Layout
+TOP
 ![Circuit Schematic](./hardware/PCB%20Photos/3D%20Render%20without%20Components%20TOP.png)
+BOTTOM
 ![Circuit Schematic](./hardware/PCB%20Photos/3D%20Render%20without%20Components%20BOTTOM.png)
 ### Physical PCB
