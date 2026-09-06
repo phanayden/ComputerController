@@ -1,0 +1,44 @@
+void initScreen() {
+    tft.init();
+    tft.setRotation(1);
+    tft.fillScreen(TFT_BLACK);
+
+    tft.setTextColor(TFT_WHITE, TFT_BLACK);
+    tft.setTextSize(3);
+    tft.setCursor(20, 20);
+    tft.print("HELLO");
+
+    delay(3000);
+
+    // Waveform area at top
+    tft.drawRect(10, 10, 460, 120, TFT_BLUE);
+
+    tft.setTextColor(TFT_CYAN, TFT_BLACK);
+    tft.setTextSize(2);
+    tft.setCursor(20, 20);
+    tft.print("Audio Waveform");
+
+    // Static labels
+    tft.setTextColor(TFT_WHITE, TFT_BLACK);
+    tft.setTextSize(2);
+
+    tft.setCursor(20, 145);
+    tft.print("Volume:");
+
+    tft.setCursor(220, 145);
+    tft.print("Mic:");
+
+    tft.setCursor(20, 175);
+    tft.print("Muted:");
+
+    // Initial values
+    updateVolumeUI(0);
+    updateMicUI(0);
+    updateMutedUI(false);
+
+    // Button icons
+    updatePlayPauseButtonUI(false);
+    updateSkipBackButtonUI(false);
+    updateSkipNextButtonUI(false);
+    updateMicMuteButtonUI(false);
+}
