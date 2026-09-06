@@ -17,3 +17,5 @@ Custom Computer Controller that uses a custom PCB to control the media functions
 * **LED Ring:** WS2812B RGB LED Rings 12 Bits
 
 ## Hardware Architecture and Visuals
+### Circuit Schematic
+![Circuit Schematic](./hardware/schematic/PCB%20Schematic.png)
